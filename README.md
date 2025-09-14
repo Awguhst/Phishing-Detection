@@ -4,6 +4,11 @@ A machine learning-based phishing detection app built with **Streamlit** and **S
 
 ---
 
+## 🎥 **Demo**
+![Streamlit app GIF](media/demo.gif)
+
+---
+
 ## What is Phishing?
 
 **Phishing** is a type of cyber attack where attackers trick users into divulging sensitive information (like usernames, passwords, or financial details) by pretending to be a trustworthy entity. Phishing is commonly done through deceptive emails, websites, or messages that resemble legitimate sources.
