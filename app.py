@@ -4,10 +4,9 @@ import pickle
 # Load the model
 loaded_model = pickle.load(open('./model/phishing.pkl', 'rb'))
 
-# Customizing the app's theme and layout (using wide layout)
 st.set_page_config(page_title="Phishing URL Detection", page_icon="🔒", layout="centered")
 
-# Styling for the app (white background in a box)
+# Styling for the app 
 st.markdown("""
     <style>
         /* Global Styles */
@@ -103,7 +102,6 @@ st.markdown("""
     </div>
 """, unsafe_allow_html=True)
 
-# Wrap the content in a centered box
 with st.container():
     st.markdown('<div class="container-box">', unsafe_allow_html=True)
 
@@ -111,20 +109,20 @@ with st.container():
     col1, col2, col3 = st.columns([0.2, 4.8, 1])  # Adjust the ratios to control the width of the columns
 
     with col2:
-        # URL input field with placeholder and tooltip
+        # URL input
         url_input = st.text_input("Enter URL to Analyze:", "https://www.youtube.com/", placeholder="https://www.youtube.com/", help="Enter the full URL (e.g., https://example.com)")
 
     with col3:
         # Analyze button
         analyze_button = st.button("Analyze URL")
 
-    # Prediction logic happens after the button is clicked, outside of the columns
+    # Prediction logic
     if analyze_button:
         if url_input:
             with st.spinner("Analyzing..."):
                 prediction = loaded_model.predict([url_input])
 
-            # Displaying results inside a card style layout
+            # Displaying results
             if prediction == 1:
                 st.markdown("""
                     <div class="result-card phishing-card">
