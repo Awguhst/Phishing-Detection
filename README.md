@@ -22,6 +22,6 @@ The phishing detection model is trained using a **Logistic Regression** classifi
 1. **Text Tokenization**: Extracts words from the URL using a custom tokenizer.
 2. **Logistic Regression**: Classifies URLs as phishing or legitimate based on the extracted features.
 
-The trained model is saved as a **pickled** file (`phishing_model.pkl`) for easy loading and prediction.
+The trained model is saved as a **pickled** file (`phishing.pkl`) for easy loading and prediction.
 
 ---
