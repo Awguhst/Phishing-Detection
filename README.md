@@ -11,7 +11,7 @@ It is commonly carried out through deceptive emails, websites, or messages that 
 
 ---
 
-## 🚀 Demo
+## 🎥 Demo
 ![Streamlit app GIF](media/demo.gif)
 
 ---
