@@ -1,6 +1,6 @@
 # Phishing Detection App 🔒
 
-A machine learning-based phishing detection system built with **Scikit-learn** and **Streamlit**.  
+A machine learning-based phishing detection web app built with **Scikit-learn** and **Streamlit**.  
 The app classifies URLs as **phishing** or **legitimate** using text-based features.
 
 ---
