@@ -17,8 +17,8 @@ It is commonly carried out through deceptive emails, websites, or messages that 
 ---
 
 ## Overview
-- **Data Preprocessing**: Tokenized and stemmed URLs to extract features.  
-- **Feature Engineering**: Created text sequences and visualized patterns using word clouds.  
-- **Model**: `CountVectorizer` + `LogisticRegression` pipeline.  
-- **Validation**: Stratified 5-fold cross-validation; metrics include Accuracy, Precision, Recall, F1-score (~91%).  
-- **Deployment**: The trained model is saved as a pickled file (`phishing.pkl`) for easy loading and prediction.
+The project begins with preprocessing the URL data, where URLs are tokenized and stemmed to extract meaningful features. Feature engineering follows, creating text sequences and visualizing patterns with word clouds to better distinguish phishing URLs from legitimate ones.
+
+A machine learning pipeline is built using `CountVectorizer` and `LogisticRegression`. The model is evaluated with stratified 5-fold cross-validation, achieving approximately 91% across Accuracy, Precision, Recall, and F1-score.
+
+The trained model is saved as a pickled file (`phishing.pkl`) for easy loading and prediction in a deployment setting.
