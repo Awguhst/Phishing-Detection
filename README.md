@@ -17,7 +17,7 @@ It is commonly carried out through deceptive emails, websites, or messages that 
 ---
 
 ## Overview
-The project begins with preprocessing the URL data, where URLs are tokenized and stemmed to extract meaningful features. Feature engineering follows, creating text sequences and visualizing patterns with word clouds to better distinguish phishing URLs from legitimate ones.
+The project begins with preprocessing the URL data, where URLs are tokenized and stemmed to extract features. Feature engineering follows, creating text sequences and visualizing patterns with word clouds to better distinguish phishing URLs from legitimate ones.
 
 A machine learning pipeline is built using `CountVectorizer` and `LogisticRegression`. The model is evaluated with stratified 5-fold cross-validation, achieving approximately 91% across Accuracy, Precision, Recall, and F1-score.
 
